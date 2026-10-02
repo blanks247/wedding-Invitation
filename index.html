@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>చి॥ ప్రతీక్ & చి॥ల॥సౌ॥ నిశ్చల — తెలుగు సాంప్రదాయ వివాహ ఆహ్వాన పత్రిక</title>
+  <meta name="description" content="శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామివారి దివ్య ఆశీస్సులతో చి॥ ప్రతీక్ మరియు చి॥ల॥సౌ॥ నిశ్చలల శోభాయమానమైన తెలుగు సాంప్రదాయ వివాహ మహోత్సవ ఆహ్వాన పత్రిక." />
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+<body>
+
+  <!-- FLOATING TALAMBRALU RICE, MARIGOLD PETAL & BOKEH CANVAS ENGINE -->
+  <canvas id="petalCanvas"></canvas>
+
+  <!-- 3D TRADITIONAL TELUGU PALACE GATE OVERLAY -->
+  <div class="door-viewport" id="doorViewport">
+    <div class="golden-light-burst" id="goldenLightBurst"></div>
+    <div class="door-stage" id="doorStage">
+      
+      <!-- Left Door Leaf -->
+      <div class="door-leaf door-leaf-left">
+        <div class="door-arch-molding"></div>
+      </div>
+
+      <!-- Right Door Leaf -->
+      <div class="door-leaf door-leaf-right">
+        <div class="door-arch-molding"></div>
+      </div>
+
+      <!-- Central Traditional Kalasam Emblem Trigger -->
+      <div class="door-seal-center" id="doorSealBtn">
+        <div class="seal-ring-pulse">
+          <!-- Traditional Telugu Kalasam & Mango Leaves SVG Icon -->
+          <div class="telugu-kalasam-seal-icon">
+            <svg viewBox="0 0 100 100" class="kalasam-svg">
+              <circle cx="50" cy="50" r="46" fill="#7A0016" stroke="#FFC72C" stroke-width="3"/>
+              <!-- Kalasam Vessel -->
+              <path d="M35,65 Q30,82 50,82 Q70,82 65,65 L60,50 L40,50 Z" fill="#FFC72C" stroke="#D4AF37" stroke-width="2"/>
+              <!-- Mango Leaves -->
+              <path d="M30,45 Q20,30 40,38 Q50,20 60,38 Q80,30 70,45 Q50,48 30,45 Z" fill="#2E7D32"/>
+              <!-- Coconut -->
+              <ellipse cx="50" cy="36" rx="10" ry="12" fill="#795548"/>
+              <!-- Tilak / Kumkum Spot -->
+              <circle cx="50" cy="36" r="3" fill="#D32F2F"/>
+              <!-- Swastik / Sacred Motif Lines -->
+              <path d="M50,58 L50,74 M42,66 L58,66" stroke="#5A000F" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <h1 class="door-gate-title">చి॥ ప్రతీక్ & చి॥ల॥సౌ॥ నిశ్చల</h1>
+        <p class="door-gate-sub">తెలుగు సాంప్రదాయ కళ్యాణ మహోత్సవము</p>
+        <span class="door-tap-btn">✦ ఆహ్వాన పత్రికను తెరవండి ✦</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FIXED HEADER CONTAINER WITH SHLOKA & NAVBAR -->
+  <header class="site-header">
+    <!-- SACRED TELUGU SHLOKA TOP BAR -->
+    <div class="sacred-top-shloka">
+      <span>॥ శ్రీరస్తు - శుభమస్తు - అవిఘ్నమస్తు ॥</span>
+    </div>
+
+    <!-- STICKY NAVIGATION BAR -->
+    <nav class="navbar">
+      <a href="#" class="nav-logo">పవిత్ర పరిణయం</a>
+      <ul class="nav-links">
+        <li><a href="#hero">ఆహ్వానం (Invitation)</a></li>
+        <li><a href="#ceremony">సుముహూర్తం (Muhurtham)</a></li>
+        <li><a href="#traditions">ఆచారాలు (Traditions)</a></li>
+        <li><a href="#gallery">చిత్రమాలిక (Gallery)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- FLOATING SANNAI MELAM MUSIC PLAYER BUTTON -->
+  <button class="audio-player-btn" id="audioPlayerBtn" aria-label="Toggle background sannai melam music">
+    <div class="sannai-icon">🎷</div>
+    <div class="equalizer-bars">
+      <div class="equalizer-bar"></div>
+      <div class="equalizer-bar"></div>
+      <div class="equalizer-bar"></div>
+    </div>
+    <span id="audioStatusText">పెళ్ళి సన్నాయి మేళం</span>
+  </button>
+  <audio id="bgAudio" loop></audio>
+
+  <!-- MAIN TELUGU INVITATION CONTENT -->
+  <main>
+
+    <!-- HERO SECTION (TRADITIONAL CARD WITH PARALLAX & TALAMBRALU BUTTON) -->
+    <section class="hero-section" id="hero">
+
+      <!-- Decorative Mango Leaves Toranam (మామిడాకుల తోరణం) Header Banner -->
+      <div class="mavillu-toranam-header">
+        <svg viewBox="0 0 1200 60" preserveAspectRatio="none" class="toranam-svg">
+          <path d="M0,0 Q50,40 100,0 Q150,40 200,0 Q250,40 300,0 Q350,40 400,0 Q450,40 500,0 Q550,40 600,0 Q650,40 700,0 Q750,40 800,0 Q850,40 900,0 Q950,40 1000,0 Q1050,40 1100,0 Q1150,40 1200,0 L1200,0 L0,0 Z" fill="#2E7D32"/>
+          <circle cx="50" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="150" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="250" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="350" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="450" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="550" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="650" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="750" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="850" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="950" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="1050" cy="20" r="6" fill="#FFC72C"/>
+          <circle cx="1150" cy="20" r="6" fill="#FFC72C"/>
+        </svg>
+      </div>
+
+      <div class="hero-royal-card" id="heroCard">
+
+        <!-- Traditional Telugu Rangoli (Muggu) Corner Accents -->
+        <svg class="corner-filigree corner-top-left" viewBox="0 0 100 100" fill="none" stroke="#FFC72C">
+          <circle cx="30" cy="30" r="15" stroke-width="2" stroke-dasharray="3,3"/>
+          <path d="M10,10 L90,10 M10,10 L10,90 M20,20 L80,20 M20,20 L20,80" stroke-width="2"/>
+          <path d="M30,5 Q50,40 5,30" stroke-width="1.5"/>
+        </svg>
+        <svg class="corner-filigree corner-top-right" viewBox="0 0 100 100" fill="none" stroke="#FFC72C">
+          <circle cx="30" cy="30" r="15" stroke-width="2" stroke-dasharray="3,3"/>
+          <path d="M10,10 L90,10 M10,10 L10,90 M20,20 L80,20 M20,20 L20,80" stroke-width="2"/>
+          <path d="M30,5 Q50,40 5,30" stroke-width="1.5"/>
+        </svg>
+        <svg class="corner-filigree corner-bottom-left" viewBox="0 0 100 100" fill="none" stroke="#FFC72C">
+          <circle cx="30" cy="30" r="15" stroke-width="2" stroke-dasharray="3,3"/>
+          <path d="M10,10 L90,10 M10,10 L10,90 M20,20 L20,80" stroke-width="2"/>
+          <path d="M30,5 Q50,40 5,30" stroke-width="1.5"/>
+        </svg>
+        <svg class="corner-filigree corner-bottom-right" viewBox="0 0 100 100" fill="none" stroke="#FFC72C">
+          <circle cx="30" cy="30" r="15" stroke-width="2" stroke-dasharray="3,3"/>
+          <path d="M10,10 L90,10 M10,10 L10,90 M20,20 L20,80" stroke-width="2"/>
+          <path d="M30,5 Q50,40 5,30" stroke-width="1.5"/>
+        </svg>
+
+        <span class="hero-subtitle-top">॥ శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామివారి దివ్య ఆశీస్సులతో ॥</span>
+        
+        <h1 class="hero-couple-names">చి॥ ప్రతీక్ <span class="weds-symbol">&</span> చి॥ల॥సౌ॥ నిశ్చల</h1>
+        
+        <p class="hero-shloka">"మాంగళ్యం తంతునానేన మమ జీవన హేతునా । కంఠే బధ్నామి శుభగే త్వం జీవ శరదాం శతమ్ ॥"</p>
+        
+        <p class="hero-tagline">
+          మన సాంప్రదాయ ఆచార వ్యవహారాల నడుమ జరుగు శ్రీ ప్రతీక్ మరియు శ్రీమతి నిశ్చలల పవిత్ర పరిణయ మహోత్సవానికి మీ దంపతులకు, కుటుంబ పరివారానికి సుస్వాగతం.
+        </p>
+
+        <!-- Traditional Telugu Couple Frame with Yellow Marigold & Mango Leaf Border -->
+        <div class="hero-frame-wrapper">
+          <div class="hero-frame-border">
+            <img src="./assets/images/telugu_couple.png" alt="చి॥ ప్రతీక్ & చి॥ల॥సౌ॥ నిశ్చల" class="hero-img" />
+          </div>
+        </div>
+
+        <!-- Interactive Talambralu Shower Button -->
+        <div class="talambralu-action-box">
+          <button class="btn-talambralu" id="talambraluBtn">
+            🌾 వధూవరులపై తాళంబ్రాలు వేసి దీవించండి (Shower Talambralu) 🌸
+          </button>
+          <span class="talambralu-count-badge" id="talambraluCountBadge">దీవెనలు: 0 క్షణాలు</span>
+        </div>
+
+        <!-- Countdown Timer to Muhurtham -->
+        <div class="countdown-title">కళ్యాణ సుముహూర్తానికి ఇంకా...</div>
+        <div class="countdown-container">
+          <div class="countdown-box">
+            <span class="countdown-val" id="cdDays">00</span>
+            <span class="countdown-lbl">రోజులు (Days)</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-val" id="cdHours">00</span>
+            <span class="countdown-lbl">గంటలు (Hours)</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-val" id="cdMins">00</span>
+            <span class="countdown-lbl">నిమిషాలు (Mins)</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-val" id="cdSecs">00</span>
+            <span class="countdown-lbl">సెకన్లు (Secs)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WEDDING CEREMONY SECTION (కళ్యాణ మహోత్సవ కార్యక్రమాలు) -->
+    <section class="section-container" id="ceremony">
+      <div class="section-header">
+        <span class="section-tag">మాంగల్య బంధం</span>
+        <h2 class="section-title">కళ్యాణ మహోత్సవ కార్యక్రమాలు</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="ceremony-card-wrapper" id="eventsGrid">
+        <!-- Dynamic Event Cards injected by JS -->
+      </div>
+    </section>
+
+    <!-- TELUGU MARRIAGE TRADITIONS & RITUALS SECTION (మన సాంప్రదాయ ఆచారాలు) -->
+    <section class="section-container" id="traditions">
+      <div class="section-header">
+        <span class="section-tag">మన ఆచారం</span>
+        <h2 class="section-title">తెలుగు వివాహ విశిష్టత & ఆచారాలు</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="traditions-grid" id="traditionsGrid">
+        <!-- Dynamic Traditions injected by JS -->
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section class="section-container" id="gallery">
+      <div class="section-header">
+        <span class="section-tag">మధుర స్మృతులు</span>
+        <h2 class="section-title">వివాహ సంబరాల చిత్రమాలిక</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Dynamic Gallery injected by JS -->
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal">
+      <span class="lightbox-close" id="lightboxClose">&times;</span>
+      <img src="" alt="Gallery Preview" class="lightbox-img" id="lightboxImg" />
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-shloka">॥ శతమానం భవతి శతాయుః పురుషః శతేంద్రియ ఆయుష్యేవేంద్రియే ప్రతితిష్ఠతి ॥</div>
+    <div class="footer-logo">చి॥ ప్రతీక్ 𑁍 చి॥ల॥సౌ॥ నిశ్చల</div>
+    <p class="footer-text">మా పవిత్ర పరిణయ మహోత్సవానికి విచ్చేసి మమ్మల్ని దీవించగలరని మనవి.</p>
+    <div class="footer-hashtag">#NischalaWedsPratik</div>
+  </footer>
+
+  <!-- App JavaScript (Module) -->
+  <script type="module" src="./src/js/app.js"></script>
+
+</body>
+</html>
